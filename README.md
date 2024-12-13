@@ -60,8 +60,8 @@ Perform a 0-to-1 or 1-to-0 flip for all genes.
 - Reproduction: 
   Copy the selected parent directly into the offspring population.
 ---
-### Problem 1
-
+### Question 1
+![GA_Q1](Pics_for_README/GA/Q1.png)
 #### Parameters:
 - **Gene Length**: 10  
 - **Chromosomes per Generation**: 1000  
@@ -73,13 +73,14 @@ Perform a 0-to-1 or 1-to-0 flip for all genes.
 #### Results:
 - **x₁**: -7.086999022482893  
 - **x₂**: -1.4173998044965792  
-- **Minimum Fitness**: -186.56443970911963  
-
+- **Minimum Fitness**: -186.56443970911963
+ 
+![GA_Q1_result](Pics_for_README/GA/Q1_result.png)
 #### Observations:
 - With a large population size, convergence occurs quickly, reducing the need for many generations.
 ---
-### Problem 2
-
+### Question 2
+![GA_Q2](Pics_for_README/GA/Q2.png)
 #### Parameters:
 - **Gene Length**: 10  
 - **Chromosomes per Generation**: 1000  
@@ -94,16 +95,17 @@ Perform a 0-to-1 or 1-to-0 flip for all genes.
 - **x₃**: -0.22421896383186635  
 - **x₄**: -0.09609384164222945  
 - **x₅**: 0.03203128054740745  
-- **Minimum Fitness**: 1.0642861345982308  
+- **Minimum Fitness**: 1.0642861345982308
 
+![GA_Q2_result](Pics_for_README/GA/Q2_result.png)
 #### Observations:
 - With a large population size, convergence occurs quickly, reducing the need for many generations.  
 - However, the algorithm struggles to converge to values below 1.  
 - Increasing the population size leads to rapid initial improvements but does not enhance the final convergence result.  
 - Adjusting the proportions of genetic operations had little effect on the final outcome.
 ---
-### Problem 3
-
+### Question 3
+![GA_Q3](Pics_for_README/GA/Q3.png)
 #### Parameters:
 - **Gene Length**: 10  
 - **Chromosomes per Generation**: 1000  
@@ -118,8 +120,10 @@ Perform a 0-to-1 or 1-to-0 flip for all genes.
 - **δ (delta)**: 17.086999022482892  
 - **a**: 28.58260019550342  
 - **b**: 10.048875855327468  
-- **RMSE**: 732.9345328092538  
+- **RMSE**: 732.9345328092538
 
+![GA_Q3_result](Pics_for_README/GA/Q3_result.png)
+![GA_Q3_result-1](Pics_for_README/GA/Q3_result-1.png)
 #### Observations:
 -  The convergence performance was very poor. While some generations recorded good fitness values, these could not be preserved in the subsequent generations, leading to significant oscillations.  
 - Occasionally, exceptional results were observed, likely due to the large population size, increasing the probability of finding outstanding individuals.  
@@ -176,8 +180,8 @@ The steps for implementing the Particle Swarm Optimization (PSO) algorithm are a
 - Boundary conditions are strictly enforced to maintain consistency with the problem constraints.  
 - Use visualization to track convergence trends and evaluate the performance of the PSO algorithm.
 ---
-### Problem 1
-
+### Question 1
+![PSO_Q1](Pics_for_README/PSO/Q1.png)
 #### Parameters:
 - **Number of Particles**: 20  
 - **Number of Iterations**: 50  
@@ -188,14 +192,15 @@ The steps for implementing the Particle Swarm Optimization (PSO) algorithm are a
 #### Results:
 - **x₁**: 5.482853842888297  
 - **x₂**: 4.8580637744432895  
-- **Minimum Fitness**: -186.73090848284681  
-
+- **Minimum Fitness**: -186.73090848284681
+ 
+![PSO_Q1_result](Pics_for_README/PSO/Q1_result.png)
 #### Observations:
 1. A small number of particles and iterations is sufficient for convergence.  
 2. The results are satisfactory, comparable to those obtained using Genetic Algorithm (GA) for this problem.
 ---
-### Problem 2
-
+### Question 2
+![PSO_Q2](Pics_for_README/PSO/Q2.png)
 #### Parameters:
 - **Number of Particles**: 80  
 - **Number of Iterations**: 100  
@@ -209,14 +214,15 @@ The steps for implementing the Particle Swarm Optimization (PSO) algorithm are a
 - **x₃**: -1.6674808006973245e-06  
 - **x₄**: -7.750751661916521e-07  
 - **x₅**: 1.4847519892728303e-06  
-- **Minimum Fitness**: 6.240438470417331e-06  
-
+- **Minimum Fitness**: 6.240438470417331e-06
+ 
+![PSO_Q2_result](Pics_for_README/PSO/Q2_result.png)
 #### Observations:
 1. A moderate number of particles and iterations is sufficient for convergence.  
 2. The result is significantly better than that achieved using the Genetic Algorithm (GA) for this problem.
 ---
-### Problem 3
-
+### Question 3
+![PSO_Q3](Pics_for_README/PSO/Q3.png)
 #### Parameters:
 - **Number of Particles**: 150  
 - **Number of Iterations**: 150  
@@ -230,15 +236,17 @@ The steps for implementing the Particle Swarm Optimization (PSO) algorithm are a
 - **δ (delta)**: 17.84784571581737  
 - **a**: 32.052492229763786  
 - **b**: 10.977557075441  
-- **RMSE**: 309.8083293811385  
+- **RMSE**: 309.8083293811385
 
+![PSO_Q3_result](Pics_for_README/PSO/Q3_result.png)
+![PSO_Q3_result](Pics_for_README/PSO/Q3_result-1.png)
 #### Observations:
 1. This problem required a relatively large number of particles, but convergence was achieved with a moderate number of iterations.  
 2. The result is significantly better than that achieved using the Genetic Algorithm (GA).  
 3. The RMSE is approximately 310, suggesting there is room for improvement. However, based on the shape of the original data curve, achieving perfect overlap with the original graph would require more than two wave components. Thus, the result is acceptable.
 ---
-### Problem 4
-
+### Question 4
+![PSO_Q4](Pics_for_README/PSO/Q4.png)
 #### Parameters:
 - **Number of Particles**: 20  
 - **Number of Iterations**: 50  
@@ -249,14 +257,16 @@ The steps for implementing the Particle Swarm Optimization (PSO) algorithm are a
 #### Results:
 - **x₁**: 5.273746298854829e-05  
 - **x₂**: -0.00026154930712837116  
-- **Minimum Fitness**: 1000.0000000711896  
+- **Minimum Fitness**: 1000.0000000711896
 
+![PSO_Q4_result](Pics_for_README/PSO/Q4_result.png)
 #### Observations:
 1. A small number of particles and iterations is sufficient for convergence.  
 2. The result is exceptionally good for this problem.
 ---
-### Problem 5
-
+### Question 5
+![PSO_Q5](Pics_for_README/PSO/Q5.png)
+![PSO_Q5-1](Pics_for_README/PSO/Q5-1.png)
 #### Parameters:
 - **Number of Particles**: 200  
 - **Number of Iterations**: 100  
@@ -270,8 +280,9 @@ The steps for implementing the Particle Swarm Optimization (PSO) algorithm are a
 - **b₃**: 0.5000004119789387, **h₃**: 113.3896000686435, **volume₃**: 5669.484674844885  
 - **b₄**: 0.5000000322287507, **h₄**: 92.58224809572938, **volume₄**: 4629.112703167489  
 - **b₅**: 0.5000000000000034, **h₅**: 65.46582178558624, **volume₅**: 3273.2910892793348  
-- **Total Volume**: 27,437.740031437264  
+- **Total Volume**: 27,437.740031437264
 
+![PSO_Q5_result](Pics_for_README/PSO/Q5_result.png)
 #### Approach:
 - This problem was divided into 5 sections, with each section optimized separately to find the best solution and calculate the respective volumes. The total volume is the sum of the 5 individual volumes.  
 - Unlike previous problems, the calculated values of `h` and `b` must be verified against a stress equation to ensure the stress does not exceed the allowable limit.  
